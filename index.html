@@ -8,7 +8,41 @@
     <title>Animowany login</title>
 </head>
 <body>
-    
+    <div class="login">
+        <form action="" class="login__form">
+            <h1 class="login__title">Welcome back 👋</h1>
+            <p class="login_check-label">
+                Prosze kliknij w szczegóły
+            </p>
+            <button class="apple__button">
+                <i class="fa-brands fa-apple"></i>
+                Zaloguj się za pomocą Apple
+            </button>
+            <div class="login__separator"></div>
+            <div class="login__content">
+                <div class="login__box-input">
+                    <input type="text" class="login__input" id="login-email" placeholder=" ">
+                    <label for="login-email" class="login__label">Email</label>
+                    <i class="fa-regular fa-envelope input__icon"></i>
+                </div>
+                <div class="login__box-input">
+                    <input type="password" class="login__input" id="login-pass" placeholder=" ">
+                    <label for="login-pass" class="login__label">Hasło</label>
+                    <i class="fa-regular fa-eye-slash input__icon" id="login-eye"></i>
+                </div>
+            </div>
+            <div class="login__check">
+                <div class="login__check-group">
+                    <input type="checkbox" class="login__check-input" id="login-check">
+                    <label for="login-check" class="login__check-label">Zapamiętaj mnie</label>
+                </div>
+                <a href="" class="login__forgot">Nie pamiętasz hasła?</a>
+            </div>
+            <button type="submit" class="login__button">Login</button>
+            <p class="login_register">Nie posiadasz konta? <a href="#">Zarejestruj się</a></p>
+        </form>
+        <img src="assets/img/login-img.webp" alt="" class="login__img">
+    </div>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
