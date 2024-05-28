@@ -217,3 +217,31 @@ img{
     background-color: var(--white-color);
     z-index: 100;
 }
+
+/* Przykleja etykietę na górze, gdy użytkownik nakliknie na input w momencie pisania maila i hasła */
+.login__input:not(:placeholder-shown).login__input:not(:focus) + .login__label{
+    top: -12px;
+    background-color: var(--white-color);
+    z-index: 100;
+}
+
+/* RESPONSYWNOŚĆ */
+
+/* Dla innych wyświetlanych urządzeń */
+@media screen and (max-width: 817px){
+    .login{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .login__img{
+        height: auto;
+    }
+}
+@media screen and (max-width: 576px) {
+    .login__form{
+        width: 100%;
+        padding: 2.5rem 1.5rem;
+    }
+    .login__title{
+        font-size: 1.75rem;
+    }
+}
