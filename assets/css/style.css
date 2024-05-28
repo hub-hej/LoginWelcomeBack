@@ -211,4 +211,9 @@ img{
     text-decoration: underline;
 }
 
-/* Przesunięcie etykiety w górę na wejście fokusu */ 
+/* Przesunięcie etykiety w górę po kliknięciu na input */ 
+.login__input:focus + .login__label{
+    top: -12px;
+    background-color: var(--white-color);
+    z-index: 100;
+}
