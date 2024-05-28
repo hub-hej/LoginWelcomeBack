@@ -170,3 +170,45 @@ img{
 .login__button:hover, .apple__button:hover{
     scale: 1.05;
 }
+.apple__button{
+    background-color: transparent;
+    color: var(--black-color);
+    gap: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.apple__button i{
+    font-size: 25px;
+}
+.login__separator{
+    position: relative;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.login__separator::before, .login__separator::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    background-color: var(--gray-color-2);
+    width: 45%;
+    height: 1px;
+    left: 0;
+}
+.login__separator::after{
+    right: 0;
+    left: unset;
+}
+.login__register{
+    text-align: center;
+}
+.login__register a, .login__check-label{
+    color: var(--black-color);
+    font-weight: var(--font-medium);
+}
+.login__register a:hover{
+    text-decoration: underline;
+}
+
+/* Przesunięcie etykiety w górę na wejście fokusu */ 
